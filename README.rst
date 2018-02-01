@@ -29,6 +29,7 @@ Usage
 -----
 
 Private API, v1
+
 .. code-block:: python
 
    from bitfinex_api.v1.private import BitfinexPrivateAPIClient
@@ -42,6 +43,7 @@ Private API, v1
 
 
 Public API, v1
+
 .. code-block:: python
 
    from bitfinex_api.v1.public import BitfinexPublicAPIClient
