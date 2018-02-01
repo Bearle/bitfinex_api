@@ -32,7 +32,7 @@ Features
 
 Methods
 --------------------------
-** Bold ** means that it's implemented, regular - it is not implemented.
+**Bold** means that it's implemented, regular - it is not implemented.
 Format is 'Docs method name - function_name'
 
 v1
@@ -49,28 +49,28 @@ v1
     1.8 Transfer Between Wallets
     1.9 Withdrawal
 2. Orders
-    2.1 ** New order - place_order **
+    2.1 **New order - place_order**
     2.2 Multiple new orders
-    2.3 ** Cancel order - delete_order **
+    2.3 **Cancel order - delete_order**
     2.4 Cancel multiple orders
-    2.5 ** Cancel all orders - delete_all_orders **
+    2.5 **Cancel all orders - delete_all_orders**
     2.6 Replace order
-    2.7 ** Order status - status_order **
-    2.8 ** Active orders - active_orders **
+    2.7 **Order status - status_order**
+    2.8 **Active orders - active_orders**
     2.9 Orders history
 3. Positions
-    3.1 ** Active positions - active_positions **
-    3.2 ** Claim position - claim_position **
+    3.1 **Active positions - active_positions**
+    3.2 **Claim position - claim_position**
 4. Historical data
-    4.1 ** Balance history - history **
-    4.2 ** Deposit-Withdrawal history - history_movements **
-    4.3 ** Past trade - past_trades **
+    4.1 **Balance history - history**
+    4.2 **Deposit-Withdrawal history - history_movements**
+    4.3 **Past trade - past_trades**
 5. Margin funding
-    5.1 ** New offer - place_offer **
-    5.2 ** Cancel offer - cancel_offer **
-    5.3 ** Offer status - status_offer **
+    5.1 **New offer - place_offer**
+    5.2 **Cancel offer - cancel_offer**
+    5.3 **Offer status - status_offer**
     5.4 Active credits
-    5.5 ** Offers - active_offers **
+    5.5 **Offers - active_offers**
     5.6 Offers history
     5.7 Past funding trades
     5.8 Active Funding Used in a margin position
