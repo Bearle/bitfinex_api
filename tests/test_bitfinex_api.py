@@ -7,7 +7,6 @@
 import unittest
 from click.testing import CliRunner
 
-from bitfinex_api import bitfinex_api
 from bitfinex_api import cli
 
 

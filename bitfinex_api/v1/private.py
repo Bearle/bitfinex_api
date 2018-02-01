@@ -16,7 +16,6 @@ class BitfinexPrivateAPIClient:
         self.URL = "{0:s}://{1:s}/{2:s}".format(PROTOCOL, HOST, VERSION)
         self.KEY = key
         self.SECRET = secret
-        pass
 
     @property
     def _nonce(self):
