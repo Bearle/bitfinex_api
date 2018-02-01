@@ -25,6 +25,30 @@ Bitfinex API
     * Documentation: https://bitfinex-api.readthedocs.io.
 
 
+Usage
+-----
+  Private API, v1
+.. code-block:: python
+
+   from bitfinex_api.v1.private import BitfinexPrivateAPIClient
+   client = BitfinexPrivateAPIClient('Key','Secret')
+   print(client.balances())
+   >>> [{'amount': '9.69514666',
+        'available': '9.69514666',
+        'currency': 'bch',
+        'type': 'exchange'},
+        ...]
+
+  Public API, v1
+.. code-block:: python
+
+   from bitfinex_api.v1.public import BitfinexPublicAPIClient
+   client = BitfinexPublicAPIClient()
+   client.symbols()
+   >>> ['btcusd', 'ltcusd', 'ltcbtc', 'ethusd', ...]
+
+
+
 Features
 --------
 

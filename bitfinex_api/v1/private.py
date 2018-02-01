@@ -5,6 +5,7 @@ import hashlib
 import time
 import requests
 from . import PROTOCOL, HOST, VERSION
+from .exceptions import InvalidApiKey, UnknownError
 
 
 class BitfinexPrivateAPIClient:
@@ -41,6 +42,11 @@ class BitfinexPrivateAPIClient:
         signed_payload = self._sign_payload(payload)
         r = requests.post(self.URL + url, headers=signed_payload, verify=True)
         json_resp = r.json()
+        if 'message' in json_resp:
+            if json_resp['message'] == InvalidApiKey.message:
+                raise InvalidApiKey(json_resp['message'])
+            else:
+                raise UnknownError(json_resp['message'])
         return json_resp
 
     def place_order(self, amount, price, side, ord_type, symbol='btcusd', exchange='bitfinex'):
